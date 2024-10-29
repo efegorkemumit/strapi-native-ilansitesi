@@ -552,7 +552,6 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
   };
   attributes: {
     address: Schema.Attribute.String;
-    article: Schema.Attribute.Relation<'oneToOne', 'api::article.article'>;
     category: Schema.Attribute.Relation<'manyToOne', 'api::category.category'>;
     city: Schema.Attribute.String;
     createdAt: Schema.Attribute.DateTime;

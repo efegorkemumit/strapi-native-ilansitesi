@@ -53,11 +53,6 @@
       "target": "api::subcategory.subcategory",
       "inversedBy": "products"
     },
-    "article": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::article.article"
-    },
     "users_permissions_user": {
       "type": "relation",
       "relation": "oneToOne",
