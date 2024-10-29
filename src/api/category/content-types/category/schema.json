@@ -18,14 +18,26 @@
     "slug": {
       "type": "uid"
     },
-    "articles": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::article.article",
-      "mappedBy": "category"
-    },
     "description": {
       "type": "text"
+    },
+    "icon": {
+      "type": "string"
+    },
+    "color": {
+      "type": "string"
+    },
+    "subcategories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::subcategory.subcategory",
+      "mappedBy": "category"
+    },
+    "products": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product.product",
+      "mappedBy": "category"
     }
   }
 }
